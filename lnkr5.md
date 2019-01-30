@@ -6,11 +6,17 @@ The campaign has been identified as belonging to [Brocode](brcode.io), a shell c
 
 The attackers clone legitimate and semi-legitimate Chrome extensions.  Scripts are added to the clones that inject ads into every web page visited by the victim, in addition to potentially sending sensitive data to C2 servers.  The C2 communications are disguised as analytics opt-out requests.  The malicious code will falsely explain to the victim that the ads suppor the development of the extension, but almost all of the affected extensions aren't developed by the attackers.
 
+Another potential attack vector is via extensions with vulnerabilities.  Although it's not possible to come to a definitive conclusion yet, there's a possibility that compromised or malicious websites are exploiting vulnerabilities in extensions that utilize MixPanel.  Preliminary evidence suggests that the attackers may be utilizing this technique to override MIXPANEL_CUSTOM_LIB_URL, thereby causing MixPanel to load malicious code in the semi-privileged context of the extension.
+
 The attackers make the attack difficult to block.  Generic S3 bucket names are used, C2 domain names are frequently rotated, and C2 IP addresses are numerous and spread across many hosting providers.  C2 communications are disguised as opt-out requests.
 
 Affected extensions appear widespread and affect a significant percentage of English-speaking Chrome users.  The extensions are often removed from the Chrome store before they can be analyzed, which makes it difficult to assess the number of affected extensions.  Concentrations appear to be in the United States and India.
 
+At least one extension keeps a log of search keywords.  It's not yet certain that this data is stored and transmitted by lnkr5, but preliminary evidence points to that conclusion.
+
 The name `lnkr5` comes from the name of the bootstrap script, which has historically been named `lnkr5.min.js`.
+
+In at least some extensions, lnkr5 loads itself via MixPanel by overriding `MIXPANEL_CUSTOM_LIB_URL`.
 
 # IOCs #
 
@@ -20,13 +26,16 @@ This should not be treated as an exhaustive list.
 
 ```
 apiurl.org
+appsource.cool
 bigestsafe.com
 cdnpps.us
 countmake.cool
 cozytech.biz
+godlinkapp.com
 hanstrackr.com
 infoanalytics.tools
 laubeyrietechnology.com
+linkcount.cool
 makesource.cool
 netanalyzer.space
 netcheckcdn.xyz
@@ -45,11 +54,14 @@ yourfirstcheapshop.com
 
 ## URL prefixes ##
 
+Scheme can be either `http:` or `https:`.
+
 ```
-https://s3.amazonaws.com/jscache/
-https://s3.amazonaws.com/jscript-cdn/
-https://s3.amazonaws.com/cashe-js/
-http://adrs.me/get?key=6ae9f4bd1dc812dc713d61cba871d8e8&
+//s3.amazonaws.com/jscache/
+//s3.amazonaws.com/jscript-cdn/
+//s3.amazonaws.com/cashe-js/
+//s3.amazonaws.com/jsbooster/
+//adrs.me/get?key=6ae9f4bd1dc812dc713d61cba871d8e8&
 ```
 
 ## URL contents ##
@@ -94,11 +106,14 @@ __ckp_srchmlr_fired
 
 This list is far from exhaustive.
 
+URLs may be requested over plain HTTP or HTTPS.
+
 ```
-https://netcheckcdn.xyz/addons/lnkr5.min.js
-https://s3.amazonaws.com/jscript-cdn/1f404c54c2b0e13e0f.js
-https://s3.amazonaws.com/cashe-js/143e7cdebf193d2764.js
-https://s3.amazonaws.com/jscache/17c9c17dd4d2a394de.js
+//netcheckcdn.xyz/addons/lnkr5.min.js
+//s3.amazonaws.com/jscript-cdn/1f404c54c2b0e13e0f.js
+//s3.amazonaws.com/cashe-js/143e7cdebf193d2764.js
+//s3.amazonaws.com/jscache/17c9c17dd4d2a394de.js
+//s3.amazonaws.com/jscache/16a168f0af2da0c3c2.js
 ```
 
 # Abuse report correspondence #
