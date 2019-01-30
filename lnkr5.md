@@ -20,11 +20,13 @@ This should not be treated as an exhaustive list.
 
 ```
 apiurl.org
+bigestsafe.com
 cdnpps.us
 countmake.cool
 cozytech.biz
 hanstrackr.com
 laubeyrietechnology.com
+makesource.cool
 netanalyzer.space
 netcheckcdn.xyz
 profflinkgo.com
