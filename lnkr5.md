@@ -65,3 +65,32 @@ https://s3.amazonaws.com/jscript-cdn/1f404c54c2b0e13e0f.js
 https://s3.amazonaws.com/cashe-js/143e7cdebf193d2764.js
 https://s3.amazonaws.com/jscache/17c9c17dd4d2a394de.js
 ```
+
+# Abuse report correspondence #
+
+I sent an abuse report to Amazon Web Services regarding the S3 buckets.  Amazon didn't remove the malicious code.  When I questioned why, they forwarded me this response from the attackers.  (Some of the text is quoted from my original report; they appear to be addressing the individual points I mentioned.)
+
+```
+Hello,
+
+thanks for reaching us out regarding this issue.
+
+1. Here is a Virustotal report for the object 'jscript-cdn/1f404c54c2b0e13e0f.js' : https://www.virustotal.com/#/url/5f4279d8097fd1fd1c234e992a0c028146e5d102b2a3636fe1a9db3b87240503/detection, as you can see only ESET alerts on this, but from our latest case we figured out that it’s a false positive alert on the URL, not for a script content, but haven’t got a reply from ESET so far. The same situation is for 'jscript-cdn/1f65199417190d400c.js’.
+
+Anyway this scripts are not in use at this time.
+
+2. 'jscript-cdn/ is used to host scripts that are part
+of a malware campaign. The attacker creates malicious duplicates of
+legitimate extensions in the Chrome web store and injects these scripts
+into them. The ‘jscript-cdn’ is used to host scripts for: 
+    1. Monetization chrome extensions, firefox addons, websites and other web applications.
+     2. Analytics scripts for browser extensions.
+If the script is used for monetization, it’s completely MS and Google Compliance. Nor Monetization of extensions nor Injecting ads in a proper way is not prohibited. There are Extension’s Quality Quidlines and Single Purpose Policy. And of course there is no malicious code inside, we check all scripts regularly and are eager to keep them clean. If you find something suspicious in our scripts please let us know and we’ll take the action immediately.
+
+3. The link is to an old article about the extension that had been using monetization script with search enhanced results, but the integration has been made incorrect that’s why some important features, such as Opt Out from ads hadn't been work. But the extension has been dropped from the store not for monetization particularly but for violating single purpose policy.
+
+User installs the extension from official chrome store, if he doesn’t like that the extension is monetized with scripts he can easily remove the extension from his browser and install alternative from the store. Usually our clients aware users in the description of the extension that it contains the monetization scripts.
+
+Best wishes,
+Brocode Team
+```
