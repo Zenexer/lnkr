@@ -32,6 +32,13 @@ hanstrackr.com
 thisadsfor.us
 youradexchange.com
 yourfirstcheapshop.com
+trafficvalidation.tools
+scrlink.cool
+cozytech.biz
+webclose.net
+promlinkdev.com
+scrlink.cool
+countmake.cool
 ```
 
 ## URL prefixes ##
