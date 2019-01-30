@@ -19,26 +19,25 @@ This should not be treated as an exhaustive list.
 ## Domain names ##
 
 ```
-proxdevcool.com
-netcheckcdn.xyz
 apiurl.org
-netanalyzer.space
-profflinkgo.com
-srvvtrk.com
-laubeyrietechnology.com
 cdnpps.us
-votetoda.com
+countmake.cool
+cozytech.biz
 hanstrackr.com
+laubeyrietechnology.com
+netanalyzer.space
+netcheckcdn.xyz
+profflinkgo.com
+promlinkdev.com
+proxdevcool.com
+scrlink.cool
+srvvtrk.com
 thisadsfor.us
+trafficvalidation.tools
+votetoda.com
+webclose.net
 youradexchange.com
 yourfirstcheapshop.com
-trafficvalidation.tools
-scrlink.cool
-cozytech.biz
-webclose.net
-promlinkdev.com
-scrlink.cool
-countmake.cool
 ```
 
 ## URL prefixes ##
