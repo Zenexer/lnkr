@@ -6,7 +6,7 @@ The campaign has been identified as belonging to [Brocode](brcode.io), a shell c
 
 The attackers clone legitimate and semi-legitimate Chrome extensions.  Scripts are added to the clones that inject ads into every web page visited by the victim, in addition to potentially sending sensitive data to C2 servers.  The C2 communications are disguised as analytics opt-out requests.  The malicious code will falsely explain to the victim that the ads suppor the development of the extension, but almost all of the affected extensions aren't developed by the attackers.
 
-Another potential attack vector is via extensions with vulnerabilities.  Although it's not possible to come to a definitive conclusion yet, there's a possibility that compromised or malicious websites are exploiting vulnerabilities in extensions that utilize MixPanel.  Preliminary evidence suggests that the attackers may be utilizing this technique to override MIXPANEL_CUSTOM_LIB_URL, thereby causing MixPanel to load malicious code in the semi-privileged context of the extension.
+Another potential attack vector is via extensions with vulnerabilities.  Although it's not possible to come to a definitive conclusion yet, there's a possibility that compromised or malicious websites are exploiting vulnerabilities in extensions that utilize Mixpanel.  Preliminary evidence suggests that the attackers may be utilizing this technique to override MIXPANEL_CUSTOM_LIB_URL, thereby causing Mixpanel to load malicious code in the semi-privileged context of the extension.
 
 The attackers make the attack difficult to block.  Generic S3 bucket names are used, C2 domain names are frequently rotated, and C2 IP addresses are numerous and spread across many hosting providers.  C2 communications are disguised as opt-out requests.
 
@@ -16,7 +16,7 @@ At least one extension keeps a log of search keywords.  It's not yet certain tha
 
 The name `lnkr5` comes from the name of the bootstrap script, which has historically been named `lnkr5.min.js`.
 
-In at least some extensions, lnkr5 loads itself via MixPanel by overriding `MIXPANEL_CUSTOM_LIB_URL`.
+In at least some extensions, lnkr5 loads itself via Mixpanel by overriding `MIXPANEL_CUSTOM_LIB_URL`.
 
 # IOCs #
 
@@ -115,6 +115,15 @@ URLs may be requested over plain HTTP or HTTPS.
 //s3.amazonaws.com/jscache/17c9c17dd4d2a394de.js
 //s3.amazonaws.com/jscache/16a168f0af2da0c3c2.js
 ```
+
+## Analytics IDs ##
+
+These IDs are seen interspersed with malicious code.  They may or may not belong to the attackers or uniquely identify the attacks.
+
+* Mixpanel
+    * 58410f8ab299e0eb2b736f6e233eda37
+* Google Analytics
+    * UA-108823706-1
 
 # Abuse report correspondence #
 
