@@ -8,6 +8,8 @@ The attackers clone legitimate and semi-legitimate Chrome extensions.  Scripts a
 
 The attackers make the attack difficult to block.  Generic S3 bucket names are used, C2 domain names are frequently rotated, and C2 IP addresses are numerous and spread across many hosting providers.  C2 communications are disguised as opt-out requests.
 
+Affected extensions appear widespread and affect a significant percentage of English-speaking Chrome users.  The extensions are often removed from the Chrome store before they can be analyzed, which makes it difficult to assess the number of affected extensions.  Concentrations appear to be in the United States and India.
+
 The name `lnkr5` comes from the name of the bootstrap script, which has historically been named `lnkr5.min.js`.
 
 # IOCs #
