@@ -16,13 +16,22 @@ The name `lnkr5` comes from the name of the bootstrap script, which has historic
 
 This should not be treated as an exhaustive list.
 
-## Hostnames ##
+## Domain names ##
 
 ```
 proxdevcool.com
 netcheckcdn.xyz
 apiurl.org
 netanalyzer.space
+profflinkgo.com
+srvvtrk.com
+laubeyrietechnology.com
+cdnpps.us
+votetoda.com
+hanstrackr.com
+thisadsfor.us
+youradexchange.com
+yourfirstcheapshop.com
 ```
 
 ## URL prefixes ##
@@ -31,6 +40,7 @@ netanalyzer.space
 https://s3.amazonaws.com/jscache/
 https://s3.amazonaws.com/jscript-cdn/
 https://s3.amazonaws.com/cashe-js/
+http://adrs.me/get?key=6ae9f4bd1dc812dc713d61cba871d8e8&
 ```
 
 ## URL contents ##
@@ -41,6 +51,10 @@ https://s3.amazonaws.com/cashe-js/
 /lnkr5.min.js
 /optout/set/lat?jsonp=
 /optout/set/lt?jsonp=
+/script/d.php?uid=
+/www/delivery/avw.php?
+/www/delivery/afr.php?
+/www/delivery/ck.php?
 ```
 
 ## IP addresses ##
@@ -55,7 +69,17 @@ https://s3.amazonaws.com/cashe-js/
 217.23.4.32
 ```
 
-## Example URLs ##
+## Arbitrary strings ##
+
+```
+lnkr5.min.js
+143e7cdebf193d2764
+c822bb0d82ad01a5ae
+__ckp_srchydx_fired
+__ckp_srchmlr_fired
+```
+
+## Example script URLs ##
 
 This list is far from exhaustive.
 
@@ -94,3 +118,7 @@ User installs the extension from official chrome store, if he doesn’t like tha
 Best wishes,
 Brocode Team
 ```
+
+# Related reports #
+
+* https://gist.github.com/shivanshu3/45817d2354e41ca858c915b556a7174a
