@@ -110,6 +110,7 @@ URLs may be requested over plain HTTP or HTTPS.
 
 ```
 https://netcheckcdn.xyz/addons/lnkr5.min.js
+https://netcheckcdn.xyz/addons/lnkr30_nt.min.js
 https://s3.amazonaws.com/jscript-cdn/1f404c54c2b0e13e0f.js
 https://s3.amazonaws.com/cashe-js/143e7cdebf193d2764.js
 https://s3.amazonaws.com/jscache/17c9c17dd4d2a394de.js
