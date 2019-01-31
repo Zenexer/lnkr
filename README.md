@@ -1,6 +1,6 @@
-# lnkr5 #
+# lnkr #
 
-lnkr5 is a malware campaign that injects scripts into web pages via malicious browser extensions.
+lnkr is a malware campaign that injects scripts into web pages via malicious browser extensions.
 
 The campaign has been identified as belonging to [Brocode](brcode.io), a shell company registered in Hong Kong via [startupr.com.hk](https://startupr.com.hk/).  The attackers are believed to be Russian, but it's unclear whether the attack is state-sponsored or a clandestine effort.
 
@@ -12,11 +12,11 @@ The attackers make the attack difficult to block.  Generic S3 bucket names are u
 
 Affected extensions appear widespread and affect a significant percentage of English-speaking Chrome users.  The extensions are often removed from the Chrome store before they can be analyzed, which makes it difficult to assess the number of affected extensions.  Concentrations appear to be in the United States and India.
 
-At least one extension keeps a log of search keywords.  It's not yet certain that this data is stored and transmitted by lnkr5, but preliminary evidence points to that conclusion.
+At least one extension keeps a log of search keywords.  It's not yet certain that this data is stored and transmitted by lnkr, but preliminary evidence points to that conclusion.
 
-The name `lnkr5` comes from the name of the bootstrap script, which has historically been named `lnkr5.min.js`.
+The name `lnkr` appears to be the name used by the attackers.  The boostrap scripts are prefixed with `lnkr`, and some of the server-side C2 source code is in a folder named `lnkrApi`.
 
-In at least some extensions, lnkr5 loads itself via Mixpanel by overriding `MIXPANEL_CUSTOM_LIB_URL`.
+In at least some extensions, lnkr loads itself via Mixpanel by overriding `MIXPANEL_CUSTOM_LIB_URL`.
 
 # IOCs #
 
