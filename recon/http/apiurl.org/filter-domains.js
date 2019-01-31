@@ -1,0 +1,1 @@
+E_NOTICE	/usr/www/lnkrApi/module/API/src/API/Controller/IndexController.php(1065): Undefined index: domainsE_NOTICE	/usr/www/lnkrApi/module/API/src/API/Controller/IndexController.php(1077): Undefined index: stubwindow['func']([])
