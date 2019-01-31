@@ -18,6 +18,7 @@ tmp
 bak
 undo
 log
+tmp.*
 
 .vscode/
 .idea/
