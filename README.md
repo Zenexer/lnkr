@@ -6,7 +6,7 @@ The campaign has been identified as belonging to [Brocode](brcode.io), a shell c
 
 The attackers clone legitimate and semi-legitimate Chrome extensions.  Scripts are added to the clones that inject ads into every web page visited by the victim, in addition to potentially sending sensitive data to C2 servers.  The C2 communications are disguised as analytics opt-out requests.  The malicious code will falsely explain to the victim that the ads suppor the development of the extension, but almost all of the affected extensions aren't developed by the attackers.
 
-Another potential attack vector is via extensions with vulnerabilities.  Although it's not possible to come to a definitive conclusion yet, there's a possibility that compromised or malicious websites are exploiting vulnerabilities in extensions that utilize Mixpanel.  Preliminary evidence suggests that the attackers may be utilizing this technique to override MIXPANEL_CUSTOM_LIB_URL, thereby causing Mixpanel to load malicious code in the semi-privileged context of the extension.
+The extension that I analyzed, Flash Player + 1.2.0, ID fanagokoaogopceablgmpndejhedkjjb, was a modified, likely unauthorized clone of an extension of the same name, ID fnipglnbhfacfmefbgiiodalehbcgcbm.  The malicious clone has been removed from the Chrome Web Store; the original remains.
 
 The attackers make the attack difficult to block.  Generic S3 bucket names are used, C2 domain names are frequently rotated, and C2 IP addresses are numerous and spread across many hosting providers.  C2 communications are disguised as opt-out requests.
 
@@ -31,6 +31,7 @@ bigestsafe.com
 cdnpps.us
 countmake.cool
 cozytech.biz
+flashplaylist.com
 godlinkapp.com
 hanstrackr.com
 infoanalytics.tools
@@ -43,6 +44,7 @@ profflinkgo.com
 promlinkdev.com
 proxdevcool.com
 scrlink.cool
+serenityart.biz
 srvvtrk.com
 thisadsfor.us
 trafficvalidation.tools
