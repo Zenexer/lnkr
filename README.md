@@ -16,7 +16,9 @@ At least one extension keeps a log of search keywords.  It's not yet certain tha
 
 The name `lnkr` appears to be the name used by the attackers.  The boostrap scripts are prefixed with `lnkr`, and some of the server-side C2 source code is in a folder named `lnkrApi`.  `lnkr.us` and `lnkr.fr` both appear to be controlled by the attackers.
 
-In at least some extensions, lnkr loads itself via Mixpanel by overriding `MIXPANEL_CUSTOM_LIB_URL`.
+# Attack analysis #
+
+See [an analysis of one of the extensions](recon/extensions/fanagokoaogopceablgmpndejhedkjjb/README.md)
 
 # IOCs #
 

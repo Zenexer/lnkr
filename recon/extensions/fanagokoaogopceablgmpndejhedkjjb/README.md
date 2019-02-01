@@ -2,7 +2,7 @@
 
 <dl>
 	<dt>ID</dt>
-	<dd>`fanagokoaogopceablgmpndejhedkjjb`</dd>
+	<dd><code>fanagokoaogopceablgmpndejhedkjjb</code></dd>
 	<dt>Name</dt>
 	<dd>Flash Playlist</dd>
 	<dt>Version</dt>
