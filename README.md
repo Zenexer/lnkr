@@ -2,7 +2,7 @@
 
 lnkr is a malware campaign that injects scripts into web pages via malicious browser extensions.
 
-The campaign has been identified as belonging to [Brocode](brcode.io), a shell company registered in Hong Kong via [startupr.com.hk](https://startupr.com.hk/).  The attackers are believed to be Russian, but it's unclear whether the attack is state-sponsored or a clandestine effort.
+The campaign has been identified as belonging to [Brocode](brcode.io), a shell company registered in Hong Kong via [startupr.com.hk](https://startupr.com.hk/).  The attackers are believed to be Eastern European, likely Ukrainian or Russian, but there's no indication that the effort is state-sponsored.
 
 The attackers clone legitimate and semi-legitimate Chrome extensions.  Scripts are added to the clones that inject ads into every web page visited by the victim, in addition to potentially sending sensitive data to C2 servers.  The C2 communications are disguised as analytics opt-out requests.  The malicious code will falsely explain to the victim that the ads suppor the development of the extension, but almost all of the affected extensions aren't developed by the attackers.
 
@@ -24,35 +24,11 @@ This should not be treated as an exhaustive list.
 
 ## Domain names ##
 
-```
-apiurl.org
-appsource.cool
-bigestsafe.com
-cdnpps.us
-countmake.cool
-cozytech.biz
-flashplaylist.com
-godlinkapp.com
-hanstrackr.com
-infoanalytics.tools
-laubeyrietechnology.com
-linkcount.cool
-makesource.cool
-netanalyzer.space
-netcheckcdn.xyz
-profflinkgo.com
-promlinkdev.com
-proxdevcool.com
-scrlink.cool
-serenityart.biz
-srvvtrk.com
-thisadsfor.us
-trafficvalidation.tools
-votetoda.com
-webclose.net
-youradexchange.com
-yourfirstcheapshop.com
-```
+See domains.txt
+
+## IP addresses ##
+
+See ips.txt
 
 ## URL prefixes ##
 
@@ -78,18 +54,6 @@ Scheme can be either `http:` or `https:`.
 /www/delivery/avw.php?
 /www/delivery/afr.php?
 /www/delivery/ck.php?
-```
-
-## IP addresses ##
-
-```
-23.111.228.4
-109.236.93.206
-64.58.121.60
-93.190.140.94
-23.111.228.220
-64.58.126.236
-217.23.4.32
 ```
 
 ## Arbitrary strings ##
@@ -161,6 +125,97 @@ Best wishes,
 Brocode Team
 ```
 
+Ultimate response from AWS:
+
+```
+Hello,
+
+Thank you for providing the additional information. We are unable to remove the content at this time as we have no evidence of the reported files are malicious. These files appear to be adware, not malware.
+
+If you have conclusive evidence that the reported files cause harm, please forward the information.
+
+Regards,
+
+AWS Abuse Escalations
+```
+
+# WHOIS #
+
+## lnkr.us ##
+
+```
+Domain Name: lnkr.us
+Registry Domain ID: D43534441-US
+Registrar WHOIS Server: whois.publicdomainregistry.com
+Registrar URL: publicdomainregistry.com
+Updated Date: 2018-12-22T16:06:01Z
+Creation Date: 2013-12-19T21:11:43Z
+Registry Expiry Date: 2019-12-18T23:59:59Z
+Registrar: PDR Ltd. d/b/a PublicDomainRegistry.com
+Registrar IANA ID: 303
+Registrar Abuse Contact Email: abuse-contact@publicdomainregistry.com
+Registrar Abuse Contact Phone: +1.2013775952
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Registry Registrant ID: C45976584-US
+Registrant Name: Sergei Filov
+Registrant Organization: N/A
+Registrant Street: Svobody street 58
+Registrant Street:
+Registrant Street:
+Registrant City: kiev
+Registrant State/Province: Kiev
+Registrant Postal Code: 01001
+Registrant Country: UA
+Registrant Phone: +003.80985512834
+Registrant Phone Ext:
+Registrant Fax:
+Registrant Fax Ext:
+Registrant Email: adverto@mail.com
+Registrant Application Purpose: P1
+Registrant Nexus Category: C31/UA
+Registry Admin ID: C45976584-US
+Admin Name: Sergei Filov
+Admin Organization: N/A
+Admin Street: Svobody street 58
+Admin Street:
+Admin Street:
+Admin City: kiev
+Admin State/Province: Kiev
+Admin Postal Code: 01001
+Admin Country: UA
+Admin Phone: +003.80985512834
+Admin Phone Ext:
+Admin Fax:
+Admin Fax Ext:
+Admin Email: adverto@mail.com
+Admin Application Purpose: P1
+Admin Nexus Category: C31/UA
+Registry Tech ID: C45976584-US
+Tech Name: Sergei Filov
+Tech Organization: N/A
+Tech Street: Svobody street 58
+Tech Street:
+Tech Street:
+Tech City: kiev
+Tech State/Province: Kiev
+Tech Postal Code: 01001
+Tech Country: UA
+Tech Phone: +003.80985512834
+Tech Phone Ext:
+Tech Fax:
+Tech Fax Ext:
+Tech Email: adverto@mail.com
+Tech Application Purpose: P1
+Tech Nexus Category: C31/UA
+Name Server: vipvdscom.earth.orderbox-dns.com
+Name Server: vipvdscom.mars.orderbox-dns.com
+Name Server: vipvdscom.mercury.orderbox-dns.com
+Name Server: vipvdscom.venus.orderbox-dns.com
+```
+
 # Related reports #
 
 * https://gist.github.com/shivanshu3/45817d2354e41ca858c915b556a7174a
+* https://www.reddit.com/r/techsupport/comments/47ank9/lnkrus_redirection_malware/
+* https://productforums.google.com/forum/#!msg/websearch/xKg-fQHrKrg/Z76RCtTeAgAJ
+* https://stackoverflow.com/questions/35576910/links-in-google-searches-and-inbox-mails-get-rewritten-to-lnkr-us
