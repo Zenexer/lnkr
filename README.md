@@ -14,7 +14,7 @@ Affected extensions appear widespread and affect a significant percentage of Eng
 
 At least one extension keeps a log of search keywords.  It's not yet certain that this data is stored and transmitted by lnkr, but preliminary evidence points to that conclusion.
 
-The name `lnkr` appears to be the name used by the attackers.  The boostrap scripts are prefixed with `lnkr`, and some of the server-side C2 source code is in a folder named `lnkrApi`.
+The name `lnkr` appears to be the name used by the attackers.  The boostrap scripts are prefixed with `lnkr`, and some of the server-side C2 source code is in a folder named `lnkrApi`.  `lnkr.us` and `lnkr.fr` both appear to be controlled by the attackers.
 
 In at least some extensions, lnkr loads itself via Mixpanel by overriding `MIXPANEL_CUSTOM_LIB_URL`.
 
@@ -211,6 +211,73 @@ Name Server: vipvdscom.earth.orderbox-dns.com
 Name Server: vipvdscom.mars.orderbox-dns.com
 Name Server: vipvdscom.mercury.orderbox-dns.com
 Name Server: vipvdscom.venus.orderbox-dns.com
+```
+
+## thisadsfor.us ##
+
+```
+Domain Name: thisadsfor.us
+Registry Domain ID: D46227974-US
+Registrar WHOIS Server:
+Registrar URL: www.tldregistrarsolutions.com
+Updated Date: 2018-05-16T11:14:01Z
+Creation Date: 2014-08-08T15:29:34Z
+Registry Expiry Date: 2019-08-07T23:59:59Z
+Registrar: TLD Registrar Solutions Ltd.
+Registrar IANA ID: 1564
+Registrar Abuse Contact Email:
+Registrar Abuse Contact Phone:
+Domain Status: ok https://icann.org/epp#ok
+Registry Registrant ID: C46227970-US
+Registrant Name: frank medison
+Registrant Organization:
+Registrant Street: Govanny ave 123
+Registrant Street:
+Registrant Street:
+Registrant City: Brazil
+Registrant State/Province:
+Registrant Postal Code: 41111
+Registrant Country: BR
+Registrant Phone: +55.4552132
+Registrant Phone Ext:
+Registrant Fax:
+Registrant Fax Ext:
+Registrant Email: frankomedison1020@gmail.com
+Registrant Application Purpose: P3
+Registrant Nexus Category: C11
+Registry Admin ID: C46227972-US
+Admin Name: frank medison
+Admin Organization:
+Admin Street: Govanny ave 123
+Admin Street:
+Admin Street:
+Admin City: Brazil
+Admin State/Province:
+Admin Postal Code: 41111
+Admin Country: BR
+Admin Phone: +55.4552132
+Admin Phone Ext:
+Admin Fax:
+Admin Fax Ext:
+Admin Email: frankomedison1020@gmail.com
+Registry Tech ID: C46227971-US
+Tech Name: frank medison
+Tech Organization:
+Tech Street: Govanny ave 123
+Tech Street:
+Tech Street:
+Tech City: Brazil
+Tech State/Province:
+Tech Postal Code: 41111
+Tech Country: BR
+Tech Phone: +55.4552132
+Tech Phone Ext:
+Tech Fax:
+Tech Fax Ext:
+Tech Email: frankomedison1020@gmail.com
+Name Server: ns-usa.topdns.com
+Name Server: ns-uk.topdns.com
+Name Server: ns-canada.topdns.com
 ```
 
 # Related reports #
