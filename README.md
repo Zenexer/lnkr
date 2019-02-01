@@ -26,11 +26,11 @@ This should not be treated as an exhaustive list.
 
 ## Domain names ##
 
-See domains.txt
+See [domains.txt](domains.txt)
 
 ## IP addresses ##
 
-See ips.txt
+See [ips.txt](ips.txt)
 
 ## URL prefixes ##
 
@@ -102,7 +102,7 @@ These IDs are seen interspersed with malicious code.  They may or may not belong
 
 I sent an abuse report to Amazon Web Services regarding the S3 buckets.  Amazon didn't remove the malicious code.  When I questioned why, they forwarded me this response from the attackers.  (Some of the text is quoted from my original report; they appear to be addressing the individual points I mentioned.)
 
-```
+<blockquote>
 Hello,
 
 thanks for reaching us out regarding this issue.
@@ -125,11 +125,11 @@ User installs the extension from official chrome store, if he doesn’t like tha
 
 Best wishes,
 Brocode Team
-```
+</blockquote>
 
 Ultimate response from AWS:
 
-```
+<blockquote>
 Hello,
 
 Thank you for providing the additional information. We are unable to remove the content at this time as we have no evidence of the reported files are malicious. These files appear to be adware, not malware.
@@ -139,7 +139,7 @@ If you have conclusive evidence that the reported files cause harm, please forwa
 Regards,
 
 AWS Abuse Escalations
-```
+</blockquote>
 
 # WHOIS #
 
